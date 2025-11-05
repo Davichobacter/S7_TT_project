@@ -30,10 +30,12 @@ Pandas
 Plotly
 
 ## Estructura del proyecto
+```
 .
 ├── vehicles_us.csv
 ├── app.py
 └── README.md
+```
 
 ## Instalación y ejecución
 
@@ -47,25 +49,29 @@ cd S7_TT_project
 
 Crea un entorno virtual (opcional pero recomendado):
 
+```
 python -m venv venv
 source venv/bin/activate   # En macOS / Linux
 venv\Scripts\activate      # En Windows
-
+```
 
 Instala las dependencias:
 
+```
 pip install -r requirements.txt
-
+```
 
 Si no tienes el archivo requirements.txt, puedes instalar los paquetes manualmente:
 
+```
 pip install pandas plotly streamlit
-
+```
 
 Ejecuta la aplicación:
 
+```
 streamlit run app.py
-
+```
 
 Abre tu navegador en:
 
