@@ -3,7 +3,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 # Cargar los datos del archivo CSV
-car_data = pd.read_csv('vehicles_us.csv')
+car_data = pd.read_csv('notebooks/vehicles_us.csv')
 
 # Crear un encabezado para la aplicación Streamlit
 st.title('Relación entre Odómetro y Precio de Vehículos Usados')
