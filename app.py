@@ -33,13 +33,18 @@ price_range = st.slider('Selecciona el rango de precios:',
                         int(car_data['price'].max()),
                         (int(car_data['price'].min()), int(car_data['price'].max())))
 
-filtered_data = car_data[(car_data['price'] >= price_range[0]) & (
-    car_data['price'] <= price_range[1])]
-st.write(
-    f'Se han encontrado {len(filtered_data)} vehículos en el rango de precios seleccionado.')
+
+# Crear botón para seleccionar el tipo de transmisión
+transmission_type = st.selectbox('Selecciona el tipo de transmisión:',
+                                 options=['all', 'automatic', 'manual'])
 
 # Crear un botón para mostrar los datos filtrados
 if st.button('Mostrar datos filtrados'):
+    filtered_data = car_data[(car_data['price'] >= price_range[0]) & (
+        car_data['price'] <= price_range[1])]
+    if transmission_type != 'all':
+        filtered_data = filtered_data[filtered_data['transmission']
+                                      == transmission_type]
     st.dataframe(filtered_data)
 
 # Fin de la aplicación Streamlit
