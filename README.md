@@ -77,6 +77,8 @@ Abre tu navegador en:
 
 http://localhost:8501
 
+https://proyecto-de-sprint-7-de-triple-ten.onrender.com/
+
 ## Funcionalidades del código
 
 Gráfico de dispersión: Muestra la relación entre el odómetro y el precio de los vehículos.
